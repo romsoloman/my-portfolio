@@ -78,3 +78,8 @@ function updateCurrProject(id) {
 function getCurrProject() {
     return gCurrProj;
 }
+
+function sendMessage(email, message, textArea) {
+    return `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${message}&body=${textArea}`
+}
+
